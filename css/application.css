@@ -1,0 +1,69 @@
+div {
+	border: 1px dashed black;
+}
+
+.body {
+	size: 20px;
+}
+
+.form-body {
+	background-color: #f7cc7b;
+	margin: 0 auto;
+	position: static;
+	height: auto;
+	width: 70%;
+}
+
+.winelist-body {
+	display: block;
+}
+
+.winelist-body:after {
+	display: block;
+	clear: both;
+	content: "";
+	height: 0;
+	visibility: hidden;
+}
+
+#rating-list {
+	list-style: none;
+	padding: 0px;
+}
+
+/*adding border to see element's positioning*/
+.radio {
+	border: 1px dashed red;
+}
+
+.control-group {
+	margin: 10px;
+}
+
+.control-label {
+	font-size: 24px;
+}
+
+.input-box {
+	position: relative;
+	width: 50%;
+	font-size: 16px;
+}
+
+#wine-comments {
+	font-size: 16px;
+	width: 50%;
+}
+
+.btn-default {
+	width: 100px;
+	height: 30px;
+	font-size: 16px;
+}
+
+.wine_image {
+	height:200px;
+	float:left;
+	margin: 15px;
+}
+
