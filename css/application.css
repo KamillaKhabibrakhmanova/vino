@@ -1,12 +1,5 @@
-/*div {
-	border: 1px dashed black;
-}*/
 
-/*.body {
-	size: 20px;
-}*/
-
-
+/*Background and font*/
 body {
 	/*background-color: white;*/
 	background-image: url('../img/background.jpg');
@@ -15,11 +8,31 @@ body {
 	font-weight: bold;
 }
 
+/*Getting rid of bullets in lists*/
 ul {
 	list-style-type: none;
 	padding-left: 0px;
+	padding-top: 0px;
+	margin-top: 0px;
 }
 
+
+/*Override default link colours*/
+
+a {
+	color:#6D0B0B;
+}
+
+a:clicked {
+	color:#6D0B0B;
+}
+
+a:hover {
+	color: #4fc1e9;
+	cursor: pointer;
+}
+
+/*Adding logo*/
 .header {
 	background: url('../img/logo.jpg') no-repeat top center;
 	background-color: white;
@@ -31,9 +44,8 @@ ul {
 	margin: 0 auto;
 }
 
-
+/*Set white box for forms and lists*/
 .form-body, .index-body {
-	
 	background-color: white;
 	margin: 0 auto;
 	position: static;
@@ -42,18 +54,24 @@ ul {
 	margin-top: 25px;
 }
 
-fieldset {
-	border:none;
-}
 
+
+/*Creating space at top and bottom for wine list*/
 .index-body {
 	padding-top: 50px;
 	padding-bottom: 60px;
 }
 
+/*Arranging wine results*/
 .winelist-body {
 	display: block;
+	min-width: 250px;
+}
 
+.wine_image {
+	height:200px;
+	float:left;
+	margin: 15px;
 }
 
 .winelist-body:after {
@@ -69,24 +87,13 @@ fieldset {
 
 }
 
-#rating-list {
-	list-style: none;
-	padding: 0px;
-}
-
-/*adding border to see element's positioning*/
-.radio {
-	border: 1px dashed red;
-}
-
-.#wine-color {
-	padding-left: 0px;
-}
 
 
+
+/*Changing defaults for wine form*/
 .control-group {
-	/*margin: 10px auto;*/
 	width:70%;
+	margin-bottom: 10px;
 }
 
 .control-label {
@@ -96,16 +103,37 @@ fieldset {
 .input-box {
 	position: relative;
 	width: 50%;
-	min-width: 200px;
+	min-width: 250px;
 	font-size: 16px;
 }
 
+fieldset {
+	border:none;
+}
+
+#wine-comments {
+	font-size: 16px;
+	width: 50%;
+	min-width: 250px;
+}
+
+#rating-list {
+	list-style: none;
+	padding: 0px;
+}
+
+.#wine-color {
+	padding-left: 0px;
+}
+
+
+/*Customizing buttons*/
 .button_link {
 	background-color: #EAE7E7;
 	border: 2px solid black;
 	border-radius: 15px;
 	max-width: 500px;
-	min-width:50px;
+	min-width:200px;
 	width: 50%;
 	display: block;
 	color: white;
@@ -115,7 +143,12 @@ fieldset {
 	vertical-align: middle;
 }
 
-#search-button {
+.button_link:hover {
+	color: #4fc1e9;
+	cursor: pointer;
+}
+
+#search-button, #submit-button, #reset-button {
 	background-color: #EAE7E7;
 	border: 2px solid black;
 	border-radius: 15px;
@@ -126,8 +159,8 @@ fieldset {
 	color: white;
 	height: 40px;
 	margin-left: 0px;
-	color: black;
-	color: #892626;
+	color: #6D0B0B;
+	position: inline;
 	
 }
 
@@ -145,23 +178,14 @@ fieldset {
 	padding-top: 12px;
 }
 
-#wine-comments {
-	font-size: 16px;
-	width: 50%;
-}
-
 .btn-default {
 	width: 100px;
 	height: 30px;
 	font-size: 16px;
 }
 
-.wine_image {
-	height:200px;
-	float:left;
-	margin: 15px;
-}
 
+/*Responsive for small screens*/
 @media all and (max-width: 500px) {
 	.wine_image {
 		height: 100px;
@@ -171,6 +195,9 @@ fieldset {
 	}
 	.winelist-body {
 		padding: 5px;
+	}
+	.form-body{
+		min-width:320px;
 	}
 
 } 

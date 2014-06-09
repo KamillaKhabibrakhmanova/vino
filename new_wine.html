@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Wiknow Add New Wine Form</title>
+    <title>Viknow Add New Wine Form</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->
     <link href="css/bootflat.css" rel="stylesheet" media="screen">
@@ -123,7 +123,7 @@
 
 <!-- Wine Price -->
 <div class="control-group">
-  <label class="control-label" for="wine-price">Year</label>
+  <label class="control-label" for="wine-price">Price</label>
   <div class="controls">
     <select id="wine-price" name="wine-price" class="input-large input-box">
       <option>$1 - $5</option>
@@ -183,38 +183,28 @@
 <div class="control-group">
   <label class="control-label" for="wine-comments">Comments</label>
   <div class="controls">                     
-    <textarea rows = "4" id="wine-comments" name="wine-comments" placeholder="Share your thoughts here"></textarea>
+    <textarea rows = "4" id="wine-comments" name="wine-comments" placeholder="How was it?"></textarea>
   </div>
 </div>
 <!-- Submit Button -->
-<div class="control-group">
-<!-- <a href="winelist.html"> --><button type="submit" class="btn btn-default" id="submit-button">Submit
-<!-- </a> --></button>
+
+<div class="control-group"><a href="winelist.html">
+<!-- button_link--><button type="submit" class="btn btn-default button_link" id="submit-button">Submit
+</button></a>
 </div>
 </fieldset>
 </form>
 
     </div>
-<!-- Testing this shit -->
- <div class = "personal-wine-list">
-      <div class = "form-body winelist-body">
-        <img src="img/wine_bottle_default.jpg" class="wine_image" />
-        <p><strong>Winery: </strong>Becker's Vineyards</p>
-        <p><strong>Grape Type: </strong>Cabernet Savignon</p>
-        <p><strong>Year: </strong>2013</p>
-        <p><strong>Source: </strong>Central Market</p>
-        <p><strong>Rating: </strong>Delicious</p>
-        <p><strong>Comments: </strong>Good with cheddar cheese</p>
-      </div>
-    </div>
+
 
 
     <!-- JQuery -->
-    <script src="http://code.jquery.com/jquery.js"></script>
-    <!-- iCheck -->
-    <script src="js/icheck.min.js"></script>
-    <!-- Script to pull the rest of the wine list -->
-    <script src="js/firebase.js">
-    </script>
+  <script src="http://code.jquery.com/jquery.js"></script>
+  <!-- iCheck -->
+  <script src="js/icheck.min.js"></script>
+  <!-- Script to pull the rest of the wine list -->
+  <script src="js/firebase.js">
+  </script>
   </body>
 </html>

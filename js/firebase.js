@@ -128,8 +128,8 @@ $('#search-wine-form').on('submit', function(f) {
 		if(searchedPrice === retreivedData[key].price && (searchedColor === retreivedData[key].color)) {
 		    console.log(searchedPrice, retreivedData[key].price);
 			console.log("its the same");
-			
-	        
+
+
 	        var string = "";
 	        string = string + "<div class = \"form-body winelist-body\">";
 	        string = string + "<img src=" + colorPicture + " class=\"wine_image\" />";
@@ -192,7 +192,7 @@ $('#search-wine-form').on('submit', function(f) {
 	    }
 	}
 
-	
+
 
         return false; 
 
@@ -209,5 +209,8 @@ $('#search-wine-form').on('submit', function(f) {
 
         // });
 });
+
+        // Prevent default action
+
 
         // Prevent default action
