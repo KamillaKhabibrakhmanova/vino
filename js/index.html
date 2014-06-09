@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bootstrap 101 Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootflat.css" rel="stylesheet" media="screen">
+    <link href="css/application.css" rel="stylesheet" media="screen">
+    <script type='text/javascript' src='https://cdn.firebase.com/js/client/1.0.15/firebase.js'></script>
+  </head>
+  <body>
+    <!-- Create the form -->
+    <div class="form-body">
+      <form class="form-horizontal" id="add-wine-form">
+<fieldset>
+
+<!-- Form Name -->
+<div class = "index-body">
+<div class = "button_link">
+  <a href="new_wine.html">Add a new wine</a>
+</div>
+<div class ="button_link">
+  <a href="winelist.html">See all wines</a>
+</div>
+<p>Find a wine:</p>
+<div class="control-group">
+  <label class="control-label" for="sort-wine-color">Type</label>
+  <div class="controls">
+    <select id="sort-wine-color" name="sort-wine-color" class="input-large input-box">
+      <option>Red</option>
+      <option>White</option>
+      <option>Rose</option>
+    </select>
+  </div>
+</div>
+
+<div class="control-group">
+  <label class="control-label" for="sort-wine-price">Year</label>
+  <div class="controls">
+    <select id="sort-wine-price" name="sort-wine-price" class="input-large input-box">
+      <option>$1 - $5</option>
+      <option>$5 - $10</option>
+      <option>$10 - $15</option>
+      <option>$15 - $20</option>
+      <option>$20 - $25</option>
+      <option>$25 - $30</option>
+      <option>$30 - $35</option>
+      <option>$35 - $40</option>
+      <option>$40 - $45</option>
+      <option>$45+ </option>
+    </select>
+  </div>
+</div>
+
+</div>
+
+
+
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="js/icheck.min.js"></script>
+    <script src="js/firebase.js">
+    </script>
+  </body>
+</html>

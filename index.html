@@ -1,173 +1,43 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Bootstrap 101 Template</title>
+    <title>Wiknow Personal Wine Diary</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->
     <link href="css/bootflat.css" rel="stylesheet" media="screen">
+    <!-- Custom CSS -->
     <link href="css/application.css" rel="stylesheet" media="screen">
+    <!-- Google Font -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+    <!-- Firebase -->
     <script type='text/javascript' src='https://cdn.firebase.com/js/client/1.0.15/firebase.js'></script>
   </head>
   <body>
-    <!-- Create the form -->
-    <div class="form-body">
-      <form class="form-horizontal" id="add-wine-form">
-<fieldset>
+    <!-- Header -->
+    <a href="index.html" class=header></a>
 
-<!-- Form Name -->
-<h1>
-  <legend>Add a wine</legend>
-</h1>
+        <!-- Form Name -->
+      <div class = "index-body">
+        <div class = "button_link"><div class="button-text">
+          <a href="new_wine.html">Add a wine</a>
+        </div></div>
+        <div class ="button_link"><div class="button-text">
+          <a href="find_wine.html">Find a wine</a>
+        </div></div>
+        <div class ="button_link"><div class="button-text">
+          <a href="winelist.html">See all wines</a>
+        </div></div>
+            
 
-<!-- Upload photo button --> 
-<div class="control-group">
-  <label class="control-label" for="wine-photo">Photo</label>
-  <div class="controls">
-    <input id="wine-photo" name="wine-photo" class="input-file" type="file">
-  </div>
-</div>
-
-<!-- Winery Input Box-->
-<div class="control-group">
-  <label class="control-label" for="winery-name">Winery</label>
-  <div class="controls">
-    <input id="winery-name" name="winery-name" type="text" placeholder="What winery is the wine from?" class="input-large input-box" required="">
-    
-  </div>
-</div>
-
-<!-- Wine Type Input Box -->
-<div class="control-group">
-  <label class="control-label" for="wine-type">Wine type</label>
-  <div class="controls">
-    <input id="wine-type" name="wine-type" type="text" placeholder="Ex: Chardonnay, Cabernet Sauvignon" class="input-large input-box" required="">
-    
-  </div>
-</div>
-
-<!-- Year Drop-Down Menu -->
-<div class="control-group">
-  <label class="control-label" for="wine-year">Year</label>
-  <div class="controls">
-    <select id="wine-year" name="wine-year" class="input-large input-box">
-      <option>2014</option>
-      <option>2013</option>
-      <option>2012</option>
-      <option>2011</option>
-      <option>2010</option>
-      <option>2009</option>
-      <option>2008</option>
-      <option>2007</option>
-      <option>2006</option>
-      <option>2005</option>
-      <option>2004</option>
-      <option>2003</option>
-      <option>2002</option>
-      <option>2001</option>
-      <option>2000</option>
-      <option>1999</option>
-      <option>1998</option>
-      <option>1997</option>
-      <option>1996</option>
-      <option>1995</option>
-      <option>1994</option>
-      <option>1993</option>
-      <option>1992</option>
-      <option>1991</option>
-      <option>1990</option>
-      <option>1989</option>
-      <option>1987</option>
-      <option>1986</option>
-      <option>1985</option>
-      <option>1984</option>
-      <option>1983</option>
-      <option>1982</option>
-      <option>1981</option>
-      <option>1980 and older</option>
-    </select>
-  </div>
-</div>
-
-<!-- Wine Source Input Box-->
-<div class="control-group">
-  <label class="control-label" for="wine-source">Store</label>
-  <div class="controls">
-    <input id="wine-source" name="wine-source" type="text" placeholder="Where did you buy it?" class="input-large input-box">
-    
-  </div>
-</div>
-
-<!-- Wine Rating -->
-<div class="control-group">
-  <label class="control-label" for="wine-rating">Rating</label>
-  <div class="controls">
-    <ul id = "rating-list">
-      <li>
-    <label class="radio" for="wine-rating-0">
-      <input type="radio" name="wine-rating" id="wine-rating-0" value="Tastes like cat's piss" checked="checked">
-      Tastes like cat's piss
-    </label>
-  </li>
-  <li>
-    <label class="radio" for="wine-rating-1">
-      <input type="radio" name="wine-rating" id="wine-rating-1" value="Decent">
-      Decent
-    </label>
-  </li>
-  <li>
-    <label class="radio" for="wine-rating-2">
-      <input type="radio" name="wine-rating" id="wine-rating-2" value="Tasty">
-      Tasty
-    </label>
-  </li>
-  <li>
-    <label class="radio" for="wine-rating-3">
-      <input type="radio" name="wine-rating" id="wine-rating-3" value="Delicious">
-      Delicious
-    </label>
-  </li>
-  <li>
-    <label class="radio" for="wine-rating-4">
-      <input type="radio" name="wine-rating" id="wine-rating-4" value="Would bring to boss's dinner party">
-      Would bring to boss's dinner party
-    </label>
-  </li>
-  </ul>
-  </div>
-</div>
-
-<!-- Comments Long Text Box -->
-<div class="control-group">
-  <label class="control-label" for="wine-comments">Comments</label>
-  <div class="controls">                     
-    <textarea rows = "4" id="wine-comments" name="wine-comments" placeholder="Share your thoughts here"></textarea>
-  </div>
-</div>
-<!-- Submit Button -->
-<div class="control-group">
-<!-- <a href="winelist.html"> --><button type="submit" class="btn btn-default" id="submit-button">Submit
-<!-- </a> --></button>
-</div>
-</fieldset>
-</form>
-
-    </div>
-<!-- Testing this shit -->
- <div class = "personal-wine-list">
-      <div class = "form-body winelist-body">
-        <img src="img/wine_bottle_default.jpg" class="wine_image" />
-        <p><strong>Winery: </strong>Becker's Vineyards</p>
-        <p><strong>Grape Type: </strong>Cabernet Savignon</p>
-        <p><strong>Year: </strong>2013</p>
-        <p><strong>Source: </strong>Central Market</p>
-        <p><strong>Rating: </strong>Delicious</p>
-        <p><strong>Comments: </strong>Good with cheddar cheese</p>
-      </div>
-    </div>
+          
 
 
+
+    <!-- JQuery -->
     <script src="http://code.jquery.com/jquery.js"></script>
+    <!-- iCheck -->
     <script src="js/icheck.min.js"></script>
+    <!-- Script to pull the rest of the wine list -->
     <script src="js/firebase.js">
     </script>
   </body>

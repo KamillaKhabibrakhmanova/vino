@@ -19,10 +19,12 @@
  * typography
  * --------------------------------------------------
  */
+
+
 body {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color: #892626;
-  background-color: #892626;
+  background-color: ;
 }
 
 a {

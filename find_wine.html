@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Wiknow Personal Wine Search</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootflat.css" rel="stylesheet" media="screen">
+    <!-- Custom CSS -->
+    <link href="css/application.css" rel="stylesheet" media="screen">
+    <!-- Google Font -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+    <!-- Firebase -->
+    <script type='text/javascript' src='https://cdn.firebase.com/js/client/1.0.15/firebase.js'></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <a href="index.html" class="header"></a>
+    <!-- Create the form -->
+    <div class="form-body">
+      <form class="form-horizontal" id="search-wine-form">
+        <fieldset>
+
+        <!-- Form Name -->
+
+          <p class="control-label">Find a wine:</p>
+            <div class="control-group">
+              <label class="control-label" for="sort-wine-color">Type</label>
+              <div class="controls">
+                <select id="sort-wine-color" name="sort-wine-color" class="input-large input-box">
+                  <option>red</option>
+                  <option>white</option>
+                  <option>rose</option>
+                  <option>I'm feeling lucky</option>
+                </select>
+              </div>
+            </div>
+
+          <div class="control-group">
+            <label class="control-label" for="sort-wine-price">Price</label>
+            <div class="controls">
+              <select id="sort-wine-price" name="sort-wine-price" class="input-large input-box">
+                <option>It don't matter</option>
+                <option>$1 - $5</option>
+                <option>$5 - $10</option>
+                <option>$10 - $15</option>
+                <option>$15 - $20</option>
+                <option>$20 - $25</option>
+                <option>$25 - $30</option>
+                <option>$30 - $35</option>
+                <option>$35 - $40</option>
+                <option>$40 - $45</option>
+                <option>$45+ </option>
+              </select>
+            </div>
+          </div>
+          <div class="control-group">
+            <button media="screen" type="submit" class="btn btn-default button_link button_link" id="search-button">Search!
+            </button>
+          </div>
+        </div>
+      </fieldset>
+    </form>
+    <div class = "results-wine-list"></div>
+
+    <!-- JQuery -->
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <!-- iCheck -->
+    <script src="js/icheck.min.js"></script>
+    <!-- Script to pull the rest of the wine list -->
+    <script src="js/firebase.js">
+    </script>
+  </body>
+</html>

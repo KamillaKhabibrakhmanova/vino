@@ -1,21 +1,59 @@
-div {
+/*div {
 	border: 1px dashed black;
-}
+}*/
 
-.body {
+/*.body {
 	size: 20px;
+}*/
+
+
+body {
+	/*background-color: white;*/
+	background-image: url('../img/background.jpg');
+	color: black;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-weight: bold;
 }
 
-.form-body {
-	background-color: #f7cc7b;
+ul {
+	list-style-type: none;
+	padding-left: 0px;
+}
+
+.header {
+	background: url('../img/logo.jpg') no-repeat top center;
+	background-color: white;
+	z-index: 500;
+	display: block;
+	height: 100px;
+	width: 70%;
+	min-width: 350px;
+	margin: 0 auto;
+}
+
+
+.form-body, .index-body {
+	
+	background-color: white;
 	margin: 0 auto;
 	position: static;
 	height: auto;
 	width: 70%;
+	margin-top: 25px;
+}
+
+fieldset {
+	border:none;
+}
+
+.index-body {
+	padding-top: 50px;
+	padding-bottom: 60px;
 }
 
 .winelist-body {
 	display: block;
+
 }
 
 .winelist-body:after {
@@ -24,6 +62,11 @@ div {
 	content: "";
 	height: 0;
 	visibility: hidden;
+}
+
+.winelist-body p{
+	margin-left: 10px;
+
 }
 
 #rating-list {
@@ -36,8 +79,14 @@ div {
 	border: 1px dashed red;
 }
 
+.#wine-color {
+	padding-left: 0px;
+}
+
+
 .control-group {
-	margin: 10px;
+	/*margin: 10px auto;*/
+	width:70%;
 }
 
 .control-label {
@@ -47,7 +96,53 @@ div {
 .input-box {
 	position: relative;
 	width: 50%;
+	min-width: 200px;
 	font-size: 16px;
+}
+
+.button_link {
+	background-color: #EAE7E7;
+	border: 2px solid black;
+	border-radius: 15px;
+	max-width: 500px;
+	min-width:50px;
+	width: 50%;
+	display: block;
+	color: white;
+	margin: 20px auto;
+	text-align: center;
+	height: 80px;
+	vertical-align: middle;
+}
+
+#search-button {
+	background-color: #EAE7E7;
+	border: 2px solid black;
+	border-radius: 15px;
+	max-width: 500px;
+	min-width:100px;
+	width: 20%;
+	display: block;
+	color: white;
+	height: 40px;
+	margin-left: 0px;
+	color: black;
+	color: #892626;
+	
+}
+
+#search-button:hover {
+	color: #4fc1e9;
+	cursor: pointer;
+}
+
+.button-text{
+	padding-top: 22px;
+	font-size: 28px;
+}
+
+.button_link a{
+	padding-top: 12px;
 }
 
 #wine-comments {
@@ -66,4 +161,21 @@ div {
 	float:left;
 	margin: 15px;
 }
+
+@media all and (max-width: 500px) {
+	.wine_image {
+		height: 100px;
+	}
+	.winelist-body p {
+		margin: 0px;
+	}
+	.winelist-body {
+		padding: 5px;
+	}
+
+} 
+
+
+
+
 
