@@ -49,10 +49,19 @@ $('#add-wine-form').on('submit', function(e) {
         } else {
             alert('Your wine has been added!');
         }
-    });
+
+
 
     return false;
+
+
+    
 });
+
+
+
+
+
 
 
 
